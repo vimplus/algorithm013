@@ -1,4 +1,5 @@
 /**
+ * 时间复杂度分析：O(n)
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;

@@ -1,4 +1,5 @@
 /**
+ * 时间复杂度分析：O(NK)
  * @param {string[]} strs
  * @return {string[][]}
  */

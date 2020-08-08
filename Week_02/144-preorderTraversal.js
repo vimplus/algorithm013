@@ -1,4 +1,5 @@
 /**
+ * 时间复杂度分析：O(n)
  * 144. 二叉树的前序遍历
  * https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
  * Definition for a binary tree node.

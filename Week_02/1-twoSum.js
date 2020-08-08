@@ -1,4 +1,6 @@
 /**
+ * 两数之和
+ * 时间复杂度分析：O(n)
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}

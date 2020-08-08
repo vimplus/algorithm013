@@ -1,4 +1,5 @@
 /**
+ * 时间复杂度分析：O(n)
  * @param {string} s
  * @param {string} t
  * @return {boolean}

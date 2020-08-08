@@ -1,4 +1,5 @@
 /**
+ * 时间复杂度分析：O(n)
  * 589. N叉树的前序遍历
  * // Definition for a Node.
  * function Node(val, children) {
