@@ -9,6 +9,7 @@
  * }
  */
 /**
+ * 基于递归的遍历
  * @param {TreeNode} root
  * @return {number[]}
  */
@@ -26,6 +27,7 @@ var preorderTraversal = function(root) {
     return result;
 };
 
+// 基于栈的遍历
 var preorderTraversal = function(root) {
     let result = [];
     let stack = [];
