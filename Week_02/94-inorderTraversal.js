@@ -7,6 +7,7 @@
  * }
  */
 /**
+ * 基于递归的遍历
  * @param {TreeNode} root
  * @return {number[]}
  */
@@ -20,5 +21,23 @@ var inorderTraversal = function(root) {
         helper(node.right);
     }
     helper(root);
+    return result;
+};
+
+
+// 基于栈的遍历
+var inorderTraversal = function(root) {
+    let stack = [];
+    let result = [];
+    let curr = root;
+    while (curr !== null || stack.length) {
+        while (curr !== null) {
+            stack.push(curr);
+            curr = curr.left;
+        }
+        curr = stack.pop();
+        result.push(curr.val);
+        curr = curr.right;
+    }
     return result;
 };
