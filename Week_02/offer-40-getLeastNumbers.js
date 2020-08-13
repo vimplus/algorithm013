@@ -62,6 +62,8 @@ class BinaryHeap {
 }
 
 /**
+ * 剑指 Offer 40. 最小的k个数
+ * https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/
  * @param {number[]} arr
  * @param {number} k
  * @return {number[]}
