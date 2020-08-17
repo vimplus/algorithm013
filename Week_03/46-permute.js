@@ -2,6 +2,8 @@
  * 46. 全排列
  * https://leetcode-cn.com/problems/permutations/
  * 
+ * 时间复杂度分析：O(N*N!)
+ * 
  * @param {number[]} nums
  * @return {number[][]}
  */

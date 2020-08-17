@@ -2,6 +2,8 @@
  * 236. 二叉树的最近公共祖先
  * https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
  * 
+ * 时间复杂度分析：O(N)
+ * 
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;

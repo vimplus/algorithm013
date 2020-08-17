@@ -2,6 +2,8 @@
  * 111. 二叉树的最小深度
  * https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/
  * 
+ * 时间复杂度分析：O(N)
+ * 
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;

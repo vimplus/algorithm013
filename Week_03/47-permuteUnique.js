@@ -2,6 +2,8 @@
  * 47. 全排列 II
  * https://leetcode-cn.com/problems/permutations-ii/
  * 
+ * 时间复杂度分析：O(N*N!)
+ * 
  * @param {number[]} nums
  * @return {number[][]}
  */

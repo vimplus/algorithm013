@@ -2,6 +2,8 @@
  * 104. 二叉树的最大深度
  * https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
  * 
+ * 时间复杂度分析：O(N)
+ * 
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;
