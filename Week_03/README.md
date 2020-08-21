@@ -25,7 +25,7 @@
 ```javascript
 // 递归模板
 function recursion(level, maxLevel, param) {
-    // terminator（终结者）- 先把施瓦辛格装进去
+    // terminator（终结者）- 先把[施瓦辛格]装进去
     if (level > maxLevel) {
         // process result;
         return 
