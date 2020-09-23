@@ -113,7 +113,7 @@ var factorial = function(N) {
 #### 回溯的代码模板
 
 ```javascript
-function fn(params) {
+function fn(selectList) {
     let result = [];
     function backtrack(路径, 选择列表) {
         if (满足结束条件) {
@@ -129,7 +129,8 @@ function fn(params) {
         }
     }
 
-    backtrack(选择列表)
+    backtrack(选择列表);
+    return result;
 }
 ```
 

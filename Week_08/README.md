@@ -102,6 +102,8 @@
 * 两个要素：大小、替换策略
 * Hash Table + Double LinkedList
 
+代码：LRU-Cache.js
+
 ## 时间复杂度：
 * 查询: O(1)
 * 修改/更新: O(1) 
