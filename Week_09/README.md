@@ -85,7 +85,9 @@ const uniquePathsWithObstacles = function (obstacleGrid) {
 ```
 
 ##### 方法二（动态规划 - 从 终点 往 起点 递推）：
-* 思路: 先假设只有2x2的网格，那么终点临近的`上/左`两个网格都只有 1 种方式可以到达（往下/往右），终点斜对角的那个网格（左上角）到达终点（右下角）的方式只有2种（先往右再往下和先往下再往右），我们可以发现终点左上角的路径情况等于右上角和左下角的路径相加。假设当前`dp[i][j]`是终点左上角那个格子，由此我们推导出状态转移方程：`dp[i][j] = dp[i + 1][j] + dp[i][j + 1];`;
+* 思路: 先假设只有2x2的网格，那么终点临近的`上/左`两个网格都只有 1 种方式可以到达（往下/往右），终点斜对角的那个网格（左上角）到达终点（右下角）的方式只有2种（先往右再往下和先往下再往右），我们可以发现终点左上角的路径情况等于右上角和左下角的路径相加。
+
+    > 假设当前`dp[i][j]`是终点左上角那个格子，由此我们推导出状态转移方程：`dp[i][j] = dp[i + 1][j] + dp[i][j + 1];`;
 
 * 步骤：
     - 1.初始化二维DP, 将最底下一行和最右侧一列的路径情况都初始化为1（因为这些格子到达终点只有一种情况，要么都是往右，要么都是往下到达），具体还需要根据是否有障碍物进行判断；
@@ -100,7 +102,7 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
     let m = obstacleGrid.length;
     let n = obstacleGrid[0].length;
     let dp = Array.from(new Array(m), () => new Array(n));
-    dp[m - 1][n - 1] = 1 ^ (obstacleGrid[m - 1][n - 1]);    // 1 ^ 1 === 0; 1 ^ 0 === 1 相当于 Number(!obstacleGrid[m - 1][n - 1])
+    dp[m - 1][n - 1] = 1 ^ (obstacleGrid[m - 1][n - 1]); // 1 ^ 1 == 0; 1 ^ 0 == 1 相当于 Number(!obstacleGrid[m - 1][n - 1])
 
     // 初始化最右边一列
     for (let i = m - 2; i >= 0; i--) {
