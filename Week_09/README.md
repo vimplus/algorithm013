@@ -102,7 +102,8 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
     let m = obstacleGrid.length;
     let n = obstacleGrid[0].length;
     let dp = Array.from(new Array(m), () => new Array(n));
-    dp[m - 1][n - 1] = 1 ^ (obstacleGrid[m - 1][n - 1]); // 1 ^ 1 == 0; 1 ^ 0 == 1 相当于 Number(!obstacleGrid[m - 1][n - 1])
+    // 1 ^ 1 === 0; 1 ^ 0 === 1 相当于 Number(!obstacleGrid[m - 1][n - 1])
+    dp[m - 1][n - 1] = 1 ^ (obstacleGrid[m - 1][n - 1]);
 
     // 初始化最右边一列
     for (let i = m - 2; i >= 0; i--) {
